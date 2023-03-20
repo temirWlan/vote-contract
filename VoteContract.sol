@@ -84,7 +84,7 @@ contract VoteContract {
         return sessionIds.length;
     }
 
-    function getVoteSession(uint _sessionId) public view returns (Vote[] memory) {
+    function getVoteSession(uint _sessionId) public payable returns (Vote[] memory) {
         return votes[_sessionId];
     }
 
